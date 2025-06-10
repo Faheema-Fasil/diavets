@@ -33,8 +33,8 @@ function Testimonial({ partnerImages,testimonials }) {
             <div className='bg-[#F9F9F9] py-24'>
                 <div className='container '>
                     <h2 className="text-start sm:text-center relative font-bold text-[24px] sm:text-[40px] font-[Tahoma] mb-16">
-                        <span className="text-[#1FAF38]">We </span>
-                        <span className="text-[#2867B4] font-extralight">Partner With</span>
+                        <span className="text-[#2867B4]"> We Partner With</span>
+                        <span className="text-[#2867B4] font-extralight"></span>
                         <span className="absolute bottom-[-7px] left-1/4 sm:left-1/2  -translate-x-1/2 w-[100px] sm:w-[160px] h-1 bg-[#1FAF38]"></span>
                     </h2>
 
