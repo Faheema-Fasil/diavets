@@ -14,7 +14,7 @@ function MainPage() {
     // const [about,setAbout]=useState()
     // const [about,setAbout]=useState()
     // const [about,setAbout]=useState()
- 
+    const [testimonials, setTestimonials] = useState([]);
     const [partnerImages, setPartnerImages] = useState([]);
     const [sections, setSections] = useState([]);
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -56,7 +56,16 @@ function MainPage() {
             toast.error("Something went wrong!");
         }
     };
-
+    const getTestimonials = async () => {
+        try {
+            const res = await fetchData({ endpoint: '/api/content/testimonials' });
+            setTestimonials(res.data);
+            console.log("Testimonials:", res.data);
+        } catch (err) {
+            console.error("Error fetching testimonials:", err);
+        }
+    };
+    
 
     const getPartnerImage = async () => {
         try {
@@ -83,6 +92,7 @@ function MainPage() {
     useEffect(() => {
         getPartnerImage();
         getSections();
+        getTestimonials()
     }, []);
 
 
@@ -97,7 +107,7 @@ function MainPage() {
             <Home data={homeSection} headerLogo={headerSection} />
             <OurProduucts />
             <AboutUs data={aboutSection} />
-            <Testimonial partnerImages={partnerImages} />
+            <Testimonial testimonials={testimonials} partnerImages={partnerImages} />
             <ContactUs data={contactSection} handleChange={handleChange} handleSubmit={handleSubmit} formData={formData} />
             <Footer headerLogo={headerSection}/>
         </>

@@ -1,5 +1,5 @@
 
-
+const Testimonial=require('../models/testimonialModel')
 const Content = require('../models/websiteContentModel');
 const Partner=require('../models/partnersModel')
 exports.sectionDetailsPost = async (req, res) => {
@@ -13,6 +13,7 @@ exports.sectionDetailsPost = async (req, res) => {
         // imagePath = req.file.path.replace('server/', '');
         imagePath =`/uploads/${req.file.filename}`;
     }
+
 
 
     const newContent= new Content({ section, description, image: imagePath });
@@ -98,6 +99,32 @@ exports.getPartnerDetails = async (req, res) => {
     try {
       const partners = await Partner.find();
       res.status(200).json(partners);
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  };
+
+
+
+
+  
+exports.addTestimonial = async (req, res) => {
+    try {
+      const { name, title, bg, text } = req.body;
+  
+      const newTestimonial = new Testimonial({ name, title, bg, text });
+      await newTestimonial.save();
+  
+      res.status(201).json(newTestimonial);
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  };
+  
+  exports.getAllTestimonials = async (req, res) => {
+    try {
+      const testimonials = await Testimonial.find();
+      res.status(200).json(testimonials);
     } catch (err) {
       res.status(500).json({ error: err.message });
     }

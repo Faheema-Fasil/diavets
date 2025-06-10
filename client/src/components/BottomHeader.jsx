@@ -31,7 +31,7 @@ function BottomHeader({headerLogo}) {
                     <i className="fa-solid fa-bars fa-2xl" style={{ color: "#2867B4" }}></i>
                 </button>
             </div>
-            <SideBar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+            <SideBar headerLogo={headerLogo} isOpen={isOpen} toggleSidebar={toggleSidebar} />
         </div>
 
     )

@@ -2,7 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const path = require('path');
 
-const {partnerDetails, sectionDetailsPost, getPartnerDetails } = require('../controller/homeController');
+const {partnerDetails, sectionDetailsPost, getPartnerDetails, addTestimonial, getAllTestimonials } = require('../controller/homeController');
 const { contactUsDetails } = require('../controller/contactController');
 const { getDetails } = require('../controller/getDetailsContoller');
 
@@ -38,4 +38,6 @@ router.post('/contact',contactUsDetails)
 // GET route to fetch content
 router.get('/',getDetails);
 
+router.post('/testimonials/add', addTestimonial);
+router.get('/testimonials', getAllTestimonials);
 module.exports = router;
