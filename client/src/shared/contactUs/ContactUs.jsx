@@ -8,7 +8,7 @@ function ContactUs({handleChange,handleSubmit,formData,data}) {
 
     <div id='contact' className="container  flex flex-col md:flex-row justify-center gap-5 lg:gap-15  font-[Tahoma]">
       {/* Left Section */}
-      <div className=" md:w-2/3 xl:w-1/3 flex flex-col gap-4 md:gap-8 mb-3">
+      <div className=" md:w-2/3 xl:w-1/3 flex flex-col gap-4 md:gap-2 mb-3">
         <h2 className="text-[24px] md:text-[40px] font-bold ">
           <span className="text-[#1FAF38]">Contact </span>
           <span className="text-[#2867B4] font-extralight">Us</span>
