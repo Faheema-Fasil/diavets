@@ -18,18 +18,24 @@ function ContactUs({handleChange,handleSubmit,formData,data}) {
         </p>
         <div className="flex items-center gap-3 ">
           <i className="fa-solid fa-phone-volume text-[#2867B4]"></i>
-          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px]">+91 9111116483</span>
+          <a href="tel:+919111116483">
+
+          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38]">+91 9111116483</span>
+          </a>
         </div>
         <div className="flex items-center gap-3 ">
           <i className="fa-solid fa-envelope text-[#2867B4]"></i> 
-          <a href="mailto:info@diavets.com"><span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px]">info@diavets.com</span></a>
+          <a href="mailto:info@diavets.com"><span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38]">info@diavets.com</span></a>
          
         </div>
         <div className="flex items-start gap-3">
           <i className="fa-solid fa-location-dot text-[#2867B4] mt-1"></i>
-          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px]">
+          <a href="https://g.co/kgs/bis71Kb">
+
+          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38]">
             Door no:201, Sukh Apartment, 188 Anoop Nagar, Indore, Madhya Pradesh - 452008.
           </span>
+          </a>
         </div>
       </div>
 
