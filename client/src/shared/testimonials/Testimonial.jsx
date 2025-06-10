@@ -1,4 +1,5 @@
 import React from 'react';
+import server_url2 from '../../services/serverUrl';
 // import a from '../../assets/img1.png';
 // import b from '../../assets/img2.png';
 // import c from '../../assets/img3.jpg';
@@ -60,7 +61,7 @@ function Testimonial({ partnerImages }) {
                             item.images?.map((img, imgIdx) => (
                                 <img
                                     key={`${idx}-${imgIdx}`}
-                                    src={`http://localhost:5000/uploads/${img}`}
+                                    src={`${server_url2}${img}`}
                                     alt={`Partner ${imgIdx + 1}`}
                                     className='w-[250px] h-[110px] object-contain'
                                 />

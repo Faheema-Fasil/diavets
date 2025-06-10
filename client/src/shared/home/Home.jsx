@@ -1,11 +1,14 @@
 import React from 'react'
 import TopHeader from '../../components/TopHeader'
 import BottomHeader from '../../components/BottomHeader'
-import banner from '../../assets/homepageimage.png'
+// import banner from '../../assets/homepageimage.png'
 import whatsapp from '../../assets/whatsapp-icon.png'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
-function Home() {
+import server_url from '../../services/serverUrl'
+function Home({data}) {
+    console.log(data);
+    
     return (
         <>
             <TopHeader />
@@ -36,7 +39,7 @@ function Home() {
                         </div>
                     </div>
                     <div  className='' >
-                        <img style={{objectFit:"fit"}} src={banner} className=' object-fit imghome' alt="" />
+                        <img width={50} height={50} src={`${server_url}${data?.image}`} className=' object-contain imghome' alt="" />
 
                     {/* <div style={{ position: "fixed", bottom: "15%", right: "5%" }}> */}
 

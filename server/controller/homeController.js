@@ -10,7 +10,8 @@ exports.sectionDetailsPost = async (req, res) => {
 
     if (req.file) {
 
-        imagePath = req.file.path.replace('server/', '');
+        // imagePath = req.file.path.replace('server/', '');
+        imagePath = `⁠/uploads/${req.file.filename}`;
     }
 
 
@@ -81,7 +82,8 @@ exports.sectionDetailsPost = async (req, res) => {
 exports.partnerDetails = async (req, res) => {
     try {
       const { title, description } = req.body;
-      const imagePaths = req.files.map(file => file.path.replace('server/', ''));
+    //   const imagePaths = req.files.map(file => file.path.replace('server/', ''));
+    const imagePaths = req.files.map(file =>`/uploads/${file.filename}`);
   
       const newBanner = new Partner({ title, description, images: imagePaths });
       await newBanner.save();
