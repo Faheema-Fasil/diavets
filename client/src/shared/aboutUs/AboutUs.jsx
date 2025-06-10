@@ -16,7 +16,7 @@ function AboutUs({data}) {
                        {data?.description}
                     </p>
                 </div>
-                <div className="imgabout flex justify-center ">
+                <div className="imgabout flex justify-center mt-7 sm:mt-0 ">
                     <img
                         src={`${server_url}${data?.image}`}
                         alt="About Dia-Vets"

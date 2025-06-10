@@ -39,7 +39,7 @@ function Home({data,headerLogo}) {
                             </HashLink>
                         </div>
                     </div>
-                    <div  className='' >
+                    <div  className='mt-7 sm:mt-0' >
                         <img width={50} height={50} src={`${server_url}${data?.image}`} className=' object-contain imghome' alt="" />
 
                     {/* <div style={{ position: "fixed", bottom: "15%", right: "5%" }}> */}
