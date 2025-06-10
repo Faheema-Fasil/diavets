@@ -12,7 +12,7 @@ function AboutUs({data}) {
                         <span className="text-[#1FAF38] border-b-4 border-[#1FAF38] pb-2">About</span>
                         <span className="text-[#2867B4] font-light ml-2">Us</span>
                     </h2>
-                    <p className="text-gray-700 text-[16px] md:text-[18px] lg:text-[18px] md:leading-[30px] lg:leading-[36px]">
+                    <p className="text-gray-700 font-[Tahoma] text-[16px] md:text-[18px] lg:text-[18px] md:leading-[30px] lg:leading-[36px]">
                        {data?.description}
                     </p>
                 </div>

@@ -27,13 +27,13 @@ function Home({data,headerLogo}) {
                         <div className='btn flex gap-4 flex-col sm:flex-row '>
                             <HashLink smooth to='#about'>
 
-                            <button className='bg-[#2867B4] px-15 md:px-7 lg:px-13 w-full  py-2 rounded-sm  text-white hover:bg-green-600'>
+                            <button className='bg-[#2867B4] px-15 md:px-7 lg:px-13 w-full font-[Tahoma] py-2 rounded-sm  text-white hover:bg-green-600'>
                                 Who We Are
                             </button>
                             </HashLink>
                             <HashLink smooth to='#contact'>
 
-                            <button className='border-1 px-15 md:px-9 lg:px-13 py-2 w-full hover:bg-green-600 hover:border-1-white hover:text-white rounded-sm ' >
+                            <button className='border-1 px-15 md:px-9 lg:px-13 py-2 w-full font-[Tahoma] hover:bg-green-600 hover:border-1-white hover:text-white rounded-sm ' >
                                 Contact Us
                             </button>
                             </HashLink>

@@ -19,7 +19,7 @@ function OurProduucts() {
                         <h6 className="text-[#2867B4] font-bold md:text-[20px] leading-[36px] tracking-[0] font-[Tahoma]">
                             Veterinary Healthcare
                         </h6>
-                        <p className="leading-[25px] text-[16px]  md:text-[18px] sm:leading-[30px]">
+                        <p className="leading-[25px] text-[16px]font-[Tahoma] md:text-[18px] sm:leading-[30px]">
                             Innovative diagnostic and therapeutic solutions tailored for livestock, pets, and veterinary professionals — supporting healthier animals and sustainable farming.
                         </p>
                     </div>
@@ -30,7 +30,7 @@ function OurProduucts() {
                         <h6 className="text-[#2867B4] font-bold md:text-[20px] leading-[36px] tracking-[0] font-[Tahoma]">
                             Specialized Products
                         </h6>
-                        <p className="leading-[25px] text-[16px]  md:text-[18px] sm:leading-[30px]">
+                        <p className="leading-[25px] text-[16px] font-[Tahoma] md:text-[18px] sm:leading-[30px]">
                             Custom-developed, research-based tools for public health programs, institutional needs, and niche healthcare requirements across sectors.
                         </p>
                     </div>
