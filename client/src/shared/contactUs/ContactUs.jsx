@@ -6,7 +6,7 @@ function ContactUs({handleChange,handleSubmit,formData,data}) {
     <>
     <div className=' bg-white py-19 ' >
 
-    <div id='contact' className="container  flex flex-col md:flex-row justify-center gap-5 lg:gap-15  font-[Tahoma]">
+    <div id='contact' className="container scroll-mt-38 flex flex-col md:flex-row justify-center gap-5 lg:gap-15  font-[Tahoma]">
       {/* Left Section */}
       <div className=" md:w-2/3 xl:w-1/3 flex flex-col gap-4 md:gap-1 mb-3">
         <h2 className="text-[24px] md:text-[40px] font-bold ">

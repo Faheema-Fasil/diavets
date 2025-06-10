@@ -5,7 +5,7 @@ function OurProduucts() {
         <>
         <div>
 
-            <div id='products' className="pt-[60px] container pb-15">
+            <div id='products' className="scroll-mt-20 pt-[60px] container pb-15">
                 <h2 className="text-left sm:text-center relative pb-2 font-bold  sm:ml-0 text-[24px]  sm:w-full md:text-[40px] leading-[40px] tracking-[0] font-[Tahoma] mb-12">
                     <span className="text-[#1FAF38] mb-4">Our Product</span>
                     <span className="text-[#2867B4] font-extralight"> Categories</span>
@@ -14,7 +14,7 @@ function OurProduucts() {
 
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-6 p-0 sm:p-6">
                     {/* Card 1 */}
-                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700  bg-[#DCEBF8] border-1 border-[#DCEBF8]  lg:w-2/5  max-w-md flex flex-col h-auto  sm:h-[360px] lg:h-[350px] gap-5 p-5 py-16">
+                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700  bg-[#DCEBF8] border-1 border-[#DCEBF8]  md:w-2/3  max-w-md flex flex-col h-auto  sm:h-[360px] lg:h-[350px] gap-5 p-5 py-16">
                         <i className="group-hover:text-[#2867B4] duration-700 fa-solid fa-prescription-bottle-medical fa-2xl"></i>
                         <h6 className="text-[#2867B4] font-bold md:text-[20px] leading-[36px] tracking-[0] font-[Tahoma]">
                             Veterinary Healthcare
@@ -25,7 +25,7 @@ function OurProduucts() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700 border-1 border-[#DCEBF8] bg-[#FFE6DD] h-auto  sm:h-[360px] lg:w-2/3 lg:h-[350px] max-w-md flex flex-col gap-5 p-5 py-16">
+                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700 border-1 border-[#DCEBF8] bg-[#FFE6DD] h-auto  sm:h-[360px] md:w-2/3 lg:h-[350px] max-w-md flex flex-col gap-5 p-5 py-16">
                         <i className="group-hover:text-[#2867B4] duration-700 fa-solid fa-magnifying-glass fa-2xl"></i>
                         <h6 className="text-[#2867B4] font-bold md:text-[20px] leading-[36px] tracking-[0] font-[Tahoma]">
                             Specialized Products

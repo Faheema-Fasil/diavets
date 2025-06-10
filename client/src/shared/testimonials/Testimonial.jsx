@@ -8,7 +8,7 @@ function Testimonial({ partnerImages,testimonials }) {
     return (
         <>
             {/* Testimonials Section */}
-            <div id='testimonials' className='container py-24'>
+            <div id='testimonials' className='scroll-mt-20 container py-24'>
                 <h2 className="text-left md:text-center relative font-bold text-[24px] sm:text-[40px] leading-[40px] font-[Tahoma] mb-16">
                     <span className="text-[#1FAF38]">What </span>
                     <span className="text-[#2867B4] font-extralight">Others Say</span>
@@ -45,7 +45,7 @@ function Testimonial({ partnerImages,testimonials }) {
                                     key={`${idx}-${imgIdx}`}
                                     src={`${server_url}${img}`}
                                     alt={`Partner ${imgIdx + 1}`}
-                                    className='object-contain h-[100px] md:h-[112px] lg:h-[140px] w-auto'
+                                    className='object-contain h-auto md:h-[112px] lg:h-[140px] w-[200px] s:w-auto'
                                 />
                             ))
                         )}

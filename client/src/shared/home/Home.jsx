@@ -15,7 +15,7 @@ function Home({data,headerLogo}) {
             <BottomHeader headerLogo={headerLogo} />
             <div className=' bg-[#DCEBF8]'>
 
-                <div id='home' className=' flex flex-col pt-9 pb-19 md:flex-row  justify-between items-center container'>
+                <div id='home' className='scroll-mt-20 flex flex-col pt-9 pb-19 md:flex-row  justify-between items-center container'>
 
                     <div className='flex flex-col sm:w-[480px] gap-8 justify-center mb-2 lg:mt-9 content-center '>
 
