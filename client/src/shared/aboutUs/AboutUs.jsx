@@ -7,7 +7,7 @@ function AboutUs({data}) {
         <div className="bg-[#F9F9F9] py-15">
             <div id="about" className="container  flex flex-col sm:flex-row items-center justify-center ">
                 
-                <div className="w-full md:w-3/5 lg:w-1/3  text-left content-center flex flex-col">
+                <div className="w-full md:w-3/5   text-left content-center flex flex-col">
                     <h2 className="text-[24px] md:text-[40px] font-[Tahoma] font-bold leading-[40px] mb-6">
                         <span className="text-[#1FAF38] border-b-4 border-[#1FAF38] pb-2">About</span>
                         <span className="text-[#2867B4] font-light ml-2">Us</span>
