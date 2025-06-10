@@ -2,10 +2,10 @@ import React from 'react'
 import TopFooter from '../../components/TopFooter'
 import BottomFooter from '../../components/BottomFooter'
 
-function Footer() {
+function Footer({headerLogo}) {
   return (
     <>
-      <TopFooter/>
+      <TopFooter headerLogo={headerLogo} />
       <BottomFooter/>
     </>
   )

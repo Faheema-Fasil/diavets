@@ -7,13 +7,19 @@ function TopHeader() {
                 
                 {/* Contact Info */}
                 <div className="flex flex-row  items-center gap-3">
-                    <div className="flex items-center gap-2">
+                    <div >
+                        <a href="tel:+919111116483" className="flex items-center gap-2">
+
                         <i className="fa-solid fa-phone-volume fa-sm" />
                         <span className='text-sm'>+91 9111116483</span>
+                        </a>
                     </div>
                     <div className="hidden sm:flex items-center gap-2">
+                        <a href="mailto:info@diavets.com" className='sm:flex items-center gap-2'>
+
                         <i className="fa-solid fa-envelope fa-sm" />
                         <span>info@diavets.com</span>
+                        </a>
                     </div>
                 </div>
 

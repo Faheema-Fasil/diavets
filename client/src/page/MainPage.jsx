@@ -88,7 +88,7 @@ function MainPage() {
 
     const homeSection = sections.find(sec => sec.section === "home");
 
-    const headerSection = sections.find(sec => sec.section === "home");
+    const headerSection = sections.find(sec => sec.section === "head");
     const aboutSection = sections.find(sec => sec.section === "about");
     const contactSection = sections.find(sec => sec.section === "contact");
 
@@ -99,7 +99,7 @@ function MainPage() {
             <AboutUs data={aboutSection} />
             <Testimonial partnerImages={partnerImages} />
             <ContactUs data={contactSection} handleChange={handleChange} handleSubmit={handleSubmit} formData={formData} />
-            <Footer />
+            <Footer headerLogo={headerSection}/>
         </>
     )
 }

@@ -6,23 +6,24 @@ import whatsapp from '../../assets/whatsapp-icon.png'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import server_url from '../../services/serverUrl'
-function Home({data}) {
+function Home({data,headerLogo}) {
     console.log(data);
     
     return (
         <>
             <TopHeader />
-            <BottomHeader />
+            <BottomHeader headerLogo={headerLogo} />
             <div className=' bg-[#DCEBF8]'>
 
-                <div id='home' className=' flex flex-col pt-9 pb-19 md:flex-row  justify-between  container'>
+                <div id='home' className=' flex flex-col pt-9 pb-19 md:flex-row  justify-between items-center container'>
 
                     <div className='flex flex-col sm:w-[480px] gap-8 justify-center mb-2 lg:mt-9 content-center '>
 
 
                         <h1 className='font-bold text-[24px] md:text-[36px] lg:text-[40px] leading-[33px] sm:leading-[48px] font-[Tahoma] content-center text-[#753899] '>Transforming Lives<br />Through Science</h1>
                         <p className='text-[16px] md:text-[18px] leading-[26px] md:leading-[36px] tracking-[0] font-[Tahoma] font-extralight content-center'>
-                            At  Dia-Vets, we bring scientific precision and innovation to animal  healthcare. With a commitment to quality, accessibility, and real-world  impact, we develop diagnostic and therapeutic medicines and solutions  that care for lives</p>
+                            {data?.description}
+                            </p>
                         <div className='btn flex gap-4 flex-col sm:flex-row '>
                             <HashLink smooth to='#about'>
 

@@ -1,30 +1,29 @@
 import React from 'react';
 
-function ContactUs({handleChange,handleSubmit,formData}) {
+
+function ContactUs({handleChange,handleSubmit,formData,data}) {
   return (
     <>
-    <div className=' bg-white py-19 container' >
+    <div className=' bg-white py-19 ' >
 
-    <div id='contact' className="  flex flex-col md:flex-row justify-center lg:gap-15  font-[Tahoma]">
+    <div id='contact' className="container  flex flex-col md:flex-row justify-center gap-5  font-[Tahoma]">
       {/* Left Section */}
-      <div className="md:w-2/3 lg:w-1/3 flex flex-col gap-4 md:gap-8 mb-3">
+      <div className=" md:w-2/3 xl:w-1/3 flex flex-col gap-4 md:gap-8 mb-3">
         <h2 className="text-[24px] md:text-[40px] font-bold ">
           <span className="text-[#1FAF38]">Contact </span>
           <span className="text-[#2867B4] font-extralight">Us</span>
         </h2>
         <p className="text-[16px] md:text-[18px] leading-relaxed md:leading-[30px] lg:leading-[36px]">
-          We’d love to hear from you! Whether you’re looking for more information
-          about our products, partnerships, or distribution opportunities, our team is
-          here to help. Let’s work together to advance human and animal healthcare
-          through science.
+          {data?.description}
         </p>
         <div className="flex items-center gap-3 ">
           <i className="fa-solid fa-phone-volume text-[#2867B4]"></i>
           <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px]">+91 9111116483</span>
         </div>
         <div className="flex items-center gap-3 ">
-          <i className="fa-solid fa-envelope text-[#2867B4]"></i>
-          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px]">info@diavets.com</span>
+          <i className="fa-solid fa-envelope text-[#2867B4]"></i> 
+          <a href="mailto:info@diavets.com"><span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px]">info@diavets.com</span></a>
+         
         </div>
         <div className="flex items-start gap-3">
           <i className="fa-solid fa-location-dot text-[#2867B4] mt-1"></i>
@@ -35,7 +34,7 @@ function ContactUs({handleChange,handleSubmit,formData}) {
       </div>
 
       {/* Right Section */}
-      <div className=" bg-[#E6F3FC] p-7  rounded-md md:w-2/3 lg:w-1/3 border-1">
+      <div className=" bg-[#E6F3FC] p-7  rounded-md  border-1">
         <h2 className="text-[24px] md:text-[34px] lg:text-[38px] font-bold leading-tight mb-4">
           <span className="text-[#1FAF38]">We’re here to</span><br />
           <span className="text-[#2867B4] font-light">assist </span>

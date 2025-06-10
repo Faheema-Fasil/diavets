@@ -11,10 +11,10 @@ function Testimonial({ partnerImages }) {
                 <h2 className="text-left md:text-center relative font-bold text-[24px] sm:text-[40px] leading-[40px] font-[Tahoma] mb-16">
                     <span className="text-[#1FAF38]">What </span>
                     <span className="text-[#2867B4] font-extralight">Others Say</span>
-                    <span className="absolute bottom-[-10px] left-1/4 sm:left-1/2 -translate-x-1/2 w-[132px] h-1 bg-[#1FAF38]"></span>
+                    <span className="absolute bottom-[-10px] left-1/4 md:left-1/2 -translate-x-1/2 w-[132px] h-1 bg-[#1FAF38]"></span>
                 </h2>
 
-                <div className='flex flex-col md:flex-row justify-center gap-3'>
+                <div className='flex flex-col md:flex-row justify-center items-center gap-3'>
                     {[
                         {
                             name: "Dr. Ramesh Varma",
@@ -49,21 +49,21 @@ function Testimonial({ partnerImages }) {
 
             {/* Partners Section */}
             <div className='bg-[#F9F9F9] py-24'>
-                <div className='container'>
+                <div className='container '>
                     <h2 className="text-start sm:text-center relative font-bold text-[24px] sm:text-[40px] font-[Tahoma] mb-16">
                         <span className="text-[#1FAF38]">We </span>
                         <span className="text-[#2867B4] font-extralight">Partner With</span>
-                        <span className="absolute bottom-[-7px] left-1/3 sm:left-1/2 -translate-x-1/2 w-[160px] h-1 bg-[#1FAF38]"></span>
+                        <span className="absolute bottom-[-7px] left-1/4 sm:left-1/2  -translate-x-1/2 w-[160px] h-1 bg-[#1FAF38]"></span>
                     </h2>
 
-                    <div className='flex flex-wrap justify-center items-center gap-4'>
+                    <div className='flex flex-col sm:flex-row justify-center items-center gap-4 '>
                         {partnerImages?.map((item, idx) =>
                             item.images?.map((img, imgIdx) => (
                                 <img
                                     key={`${idx}-${imgIdx}`}
                                     src={`${server_url2}${img}`}
                                     alt={`Partner ${imgIdx + 1}`}
-                                    className='w-[250px] h-[110px] object-contain'
+                                    className='object-contain h-[100px] md:h-[112px] lg:h-[140px] w-auto'
                                 />
                             ))
                         )}

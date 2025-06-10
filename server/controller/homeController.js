@@ -11,7 +11,7 @@ exports.sectionDetailsPost = async (req, res) => {
     if (req.file) {
 
         // imagePath = req.file.path.replace('server/', '');
-        imagePath = `⁠/uploads/${req.file.filename}`;
+        imagePath =`/uploads/${req.file.filename}`;
     }
 
 
