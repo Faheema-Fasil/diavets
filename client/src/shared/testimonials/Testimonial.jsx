@@ -38,14 +38,14 @@ function Testimonial({ partnerImages,testimonials }) {
                         <span className="absolute bottom-[-7px] left-1/4 sm:left-1/2  -translate-x-1/2 w-[100px] sm:w-[160px] h-1 bg-[#1FAF38]"></span>
                     </h2>
 
-                    <div className='flex flex-col sm:flex-row justify-center items-center gap-4 '>
+                    <div className='flex flex-col sm:flex-row justify-center items-center gap-2 '>
                         {partnerImages?.map((item, idx) =>
                             item.images?.map((img, imgIdx) => (
                                 <img
                                     key={`${idx}-${imgIdx}`}
                                     src={`${server_url}${img}`}
                                     alt={`Partner ${imgIdx + 1}`}
-                                    className='object-contain h-auto md:h-[112px] lg:h-[140px] w-[200px] s:w-auto'
+                                    className='object-contain h-auto md:h-[112px] lg:h-[140px] w-[185px] md:w-[300px] lg:w-[500px]'
                                 />
                             ))
                         )}
