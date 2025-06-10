@@ -4,7 +4,7 @@ import server_url from '../../services/serverUrl';
 
 function AboutUs({data}) {
     return (
-        <div className="bg-[#F9F9F9] py-6">
+        <div className="bg-[#F9F9F9] py-15">
             <div id="about" className="container  flex flex-col sm:flex-row items-center justify-center ">
                 
                 <div className="w-full md:w-3/5 lg:w-1/3  text-left content-center flex flex-col">

@@ -4,6 +4,7 @@ import server_url from '../../services/serverUrl';
 // import b from '../../assets/img2.png';
 // import c from '../../assets/img3.jpg';
 function Testimonial({ partnerImages,testimonials }) {
+    
     return (
         <>
             {/* Testimonials Section */}
