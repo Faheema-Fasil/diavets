@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.container {
+    @apply px-[45px] md:px-[20px] lg:px-[200px] mx-auto;
+}
+
+.imghome {
+    @apply w-[247px] md:w-[420px] lg:w-[500px];
+}
+
+.imgabout {
+    @apply w-[247px] md:w-[400px] lg:w-[600px];
+}
