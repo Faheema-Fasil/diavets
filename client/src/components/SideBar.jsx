@@ -36,7 +36,7 @@ function SideBar({ isOpen, toggleSidebar,headerLogo }) {
     ];
 
     return (
-        <div className={`fixed top-0 left-0 h-full w-[300px] bg-[#E4F0FB] shadow-lg z-50 transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`fixed  sm:hidden top-0 left-0 h-full w-[300px] bg-[#E4F0FB] shadow-lg z-50 transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className="flex items-center justify-between px-5 py-4 border-b border-[#2867B4]">
                 <img src={`${server_url}${headerLogo?.image}`} alt="Dia-Vets Logo" className="w-[150px]" />
                 <IoClose size={28} onClick={toggleSidebar} className="text-[#2867B4] cursor-pointer" />
