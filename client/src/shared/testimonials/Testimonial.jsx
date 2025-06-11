@@ -17,7 +17,7 @@ function Testimonial({ partnerImages,testimonials }) {
 
                 <div className='flex flex-col md:flex-row justify-center items-center gap-3'>
                     {testimonials.map((item, idx) => (
-                        <div key={idx} className={`hover:bg-green-100 hover:border hover:border-[#2867B4] duration-700 ${item.bg} p-5 border-1 border-[#DCEBF8] lg:p-7 flex flex-col gap-4 w-full max-w-md font-[Tahoma] h-auto  md:h-[450px] lg:h-[450px] `}>
+                        <div key={idx} className={`hover:bg-green-100 hover:border hover:border-[#2867B4] duration-700 ${item.bg} p-5 border-1 border-white lg:p-7 flex flex-col gap-4 w-full max-w-md font-[Tahoma] h-auto  md:h-[450px] lg:h-[450px] `}>
                             <div className="text-end text-[40px] text-black">&#x275E;</div>
                             <div>
                                 <h3 className="text-[#2867B4] font-bold text-[18px]">{item.name}</h3>

@@ -25,7 +25,7 @@ function OurProduucts() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700 border-1 border-[#DCEBF8] bg-[#FFE6DD] h-auto  sm:h-[360px] md:w-2/3 lg:h-[350px] max-w-md flex flex-col gap-5 p-5 py-16">
+                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700 border-1 border-white bg-[#FFE6DD] h-auto  sm:h-[360px] md:w-2/3 lg:h-[350px] max-w-md flex flex-col gap-5 p-5 py-16">
                         <i className="group-hover:text-[#2867B4] duration-700 fa-solid fa-magnifying-glass fa-2xl"></i>
                         <h6 className="text-[#2867B4] font-bold md:text-[20px] leading-[36px] tracking-[0] font-[Tahoma]">
                             Specialized Products
