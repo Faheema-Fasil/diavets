@@ -44,12 +44,12 @@ Best regards,
 Diavets Team`,
     };
 
-    console.log('Sending user email:', userMailOptions);
+
     await transporter.sendMail(userMailOptions);
-    console.log('User email sent');
+
     
     await transporter.sendMail(adminMailOptions);
-    // await transporter.sendMail(userMailOptions);
+
 
     res
       .status(201)
