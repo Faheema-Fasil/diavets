@@ -12,7 +12,6 @@ export default {
     theme: {
       extend: {
         fontFamily: {
-          inter: ['Inter', 'sans-serif'],
           tahoma: ['Tahoma', 'sans-serif'],
         },
       },
