@@ -2,7 +2,7 @@ import React from 'react'
 import TopHeader from '../../components/TopHeader'
 import BottomHeader from '../../components/BottomHeader'
 // import banner from '../../assets/homepageimage.png'
-// import whatsapp from '../../assets/whatsapp-icon.png'
+import whatsapp from '../../assets/whatsapp-icon.jpeg'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import server_url from '../../services/serverUrl'
@@ -50,10 +50,10 @@ function Home({ data, headerLogo }) {
 
                         {/* <div style={{ position: "fixed", bottom: "15%", right: "5%" }}> */}
 
-                        <Link style={{ position: "fixed", bottom: "5%", right: "5%" }} to='https://api.whatsapp.com/send?phone=+91%209111116483'>
+                        <Link style={{ position: "fixed", bottom: "5%", right: "5%" }} to='https://api.whatsapp.com/send?phone=91911116483'>
 
 
-                            <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" width="60px" alt="" />
+                            <img src={whatsapp} width="60px" alt="" />
                         </Link>
                         {/* </div> */}
                     </div>
