@@ -20,19 +20,19 @@ function ContactUs({handleChange,handleSubmit,formData,data}) {
           <i className="fa-solid fa-phone-volume text-[#2867B4]"></i>
           <a href="tel:+919111116483">
 
-          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38]">+91 9111116483</span>
+          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38] active:text-[#1FAF38]">+91 9111116483</span>
           </a>
         </div>
         <div className="flex items-center gap-3 ">
           <i className="fa-solid fa-envelope text-[#2867B4]"></i> 
-          <a href="mailto:info@diavets.com"><span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38]">info@diavets.com</span></a>
+          <a href="mailto:info@diavets.com"><span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38] active:text-[#1FAF38]">info@diavets.com</span></a>
          
         </div>
         <div className="flex items-start gap-3">
-          <i className="fa-solid fa-location-dot text-[#2867B4] mt-1"></i>
+          <i className="fa-solid fa-location-dot text-[#2867B4]  mt-1"></i>
           <a href="https://g.co/kgs/bis71Kb">
 
-          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38]">
+          <span className="text-[13px] md:text-[18px] leading-relaxed md:leading-[36px] hover:text-[#1FAF38] active:text-[#1FAF38]">
             Door no:201, Sukh Apartment, 188 Anoop Nagar, Indore, Madhya Pradesh - 452008.
           </span>
           </a>
@@ -54,7 +54,7 @@ function ContactUs({handleChange,handleSubmit,formData,data}) {
           <input type="text" placeholder="Phone No." name="phone" value={formData.phone} onChange={handleChange} className="p-2 border-b border-gray-400 bg-transparent outline-none" />
           <input type="text" placeholder="Email Address" name="email" value={formData.email} onChange={handleChange} className="p-2 border-b border-gray-400 bg-transparent outline-none" />
           <input placeholder="How Can we Help You*" name="help" value={formData.help} onChange={handleChange} className="p-2 border-b border-gray-400 bg-transparent outline-none resize-none" rows={3}/>
-          <button type="submit" className="mt-4 bg-[#2867B4] text-white  py-2 rounded hover:bg-[#1FAF38] transition md:w-2/3 ">
+          <button type="submit" className="mt-4 bg-[#2867B4] text-white  py-2 rounded hover:bg-[#1FAF38] active:bg-[#1FAF38] transition md:w-2/3 ">
             Send Message
           </button>
         </form>

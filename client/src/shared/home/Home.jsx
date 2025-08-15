@@ -20,40 +20,50 @@ function Home({ data, headerLogo }) {
                     <div className='flex flex-col sm:w-[480px] gap-8 justify-center mb-2 lg:mt-9 content-center '>
 
 
-                    <h1
-  className="inline-block font-bold text-[24px] md:text-[36px] lg:text-[40px] leading-[33px] sm:leading-[48px] font-[Tahoma] text-[#753899] hover:text-transparent hover:bg-gradient-to-r hover:from-[#753899] hover:to-[#2867B4] hover:bg-clip-text transition-none "
->
-  Transforming Lives<br />
-  Through Science
-</h1>
-                      
+                        <h1
+                            className="inline-block font-bold text-[24px] md:text-[36px] lg:text-[40px] leading-[33px] sm:leading-[48px] font-[Tahoma] text-[#753899] hover:text-transparent hover:bg-gradient-to-r hover:from-[#753899] hover:to-[#2867B4] hover:bg-clip-text  active:text-transparent active:bg-gradient-to-r active:from-[#753899] active:to-[#2867B4] active:bg-clip-text transition-none "
+                        >
+                            Transforming Lives<br />
+                            Through Science
+                        </h1>
+
                         <p className='text-[16px] md:text-[18px] leading-[26px] md:leading-[36px] tracking-[0] font-[Tahoma] font-extralight content-center'>
                             {data?.description}
                         </p>
                         <div className='btn flex gap-4 flex-col sm:flex-row '>
                             <HashLink smooth to='#about'>
 
-                                <button className='bg-[#2867B4] px-15 md:px-7 lg:px-13 w-full font-[Tahoma] py-2 rounded-sm  text-white hover:bg-green-600'>
+                                <button className='bg-[#2867B4] px-15 md:px-7 lg:px-13 w-full font-[Tahoma] py-2 rounded-sm  text-white hover:bg-green-600 active:bg-green-600'>
                                     Who We Are
                                 </button>
                             </HashLink>
                             <HashLink smooth to='#contact'>
 
-                                <button className='border-1 px-15 md:px-9 lg:px-13 py-2 w-full font-[Tahoma] hover:bg-green-600 hover:border-1-white hover:text-white rounded-sm ' >
+                                <button className='border-1 px-15 md:px-9 lg:px-13 py-2 w-full font-[Tahoma] hover:bg-green-600 hover:border-1-white hover:text-white active:bg-green-600 active:border-1-white active:text-white  rounded-sm ' >
                                     Contact Us
                                 </button>
                             </HashLink>
                         </div>
                     </div>
                     <div className='mt-7 sm:mt-0' >
-                        <img width={50} height={50} src={`${server_url}${data?.image}`} className=' object-contain imghome' alt="" />
+                        <img
+                            src={`${server_url}${data?.image}`}
+                            alt="imghome"
+                            loading="eager"
+                            fetchPriority="high"
+                            decoding="sync"
+                            width={50}
+                            height={50}
+                            className="object-contain imghome aspect-[1/1]"
+                        />
+
 
                         {/* <div style={{ position: "fixed", bottom: "15%", right: "5%" }}> */}
 
                         <Link style={{ position: "fixed", bottom: "5%", right: "5%" }} to='https://api.whatsapp.com/send?phone=91911116483'>
 
 
-                            <img src={whatsapp} width="60px" alt="" />
+                            <img src={whatsapp} width="60px" alt="whatapp" />
                         </Link>
                         {/* </div> */}
                     </div>

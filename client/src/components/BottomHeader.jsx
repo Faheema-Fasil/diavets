@@ -16,15 +16,15 @@ function BottomHeader({headerLogo}) {
                 </Link>
 
                 <div className="hidden sm:flex flex-row items-center gap-2 md:gap-4 text-[13px] lg:text-[17px]">
-                    <HashLink smooth to="#home" className="font-[Tahoma] hover:text-[#753899]">Home</HashLink>
+                    <HashLink smooth to="#home" className="font-[Tahoma] hover:text-[#753899] active:text-[#753899]">Home</HashLink>
                     <span>|</span>
-                    <HashLink smooth to="#about" className="font-[Tahoma] hover:text-[#753899]">About Us</HashLink>
+                    <HashLink smooth to="#about" className="font-[Tahoma] hover:text-[#753899] active:text-[#753899]">About Us</HashLink>
                     <span>|</span>
-                    <HashLink smooth to="#products" className="font-[Tahoma] hover:text-[#753899]">Our Products</HashLink>
+                    <HashLink smooth to="#products" className="font-[Tahoma] hover:text-[#753899] active:text-[#753899]">Our Products</HashLink>
                     <span>|</span>
-                    <HashLink smooth to="#testimonials" className="font-[Tahoma] hover:text-[#753899]">Testimonials</HashLink>
+                    <HashLink smooth to="#testimonials" className="font-[Tahoma] hover:text-[#753899] active:text-[#753899]">Testimonials</HashLink>
                     <span>|</span>
-                    <HashLink smooth to="#contact" className="font-[Tahoma] hover:text-[#753899]">Contact Us</HashLink>
+                    <HashLink smooth to="#contact" className="font-[Tahoma] hover:text-[#753899] active:text-[#753899]">Contact Us</HashLink>
                 </div>
 
                 <button onClick={toggleSidebar} className="flex sm:hidden items-center justify-center">

@@ -49,7 +49,7 @@ function SideBar({ isOpen, toggleSidebar,headerLogo }) {
                         onClick={toggleSidebar}
                         className={`px-5 py-4 border-t border-[#2867B4] transition-all duration-300 ${
                             activeSection === to
-                                &&  'hover:bg-gradient-to-r hover:from-[#2867B4] hover:to-[#1FAF38] hover:text-white'
+                                &&  'hover:bg-gradient-to-r hover:from-[#2867B4] hover:to-[#1FAF38] hover:text-white active:bg-gradient-to-r active:from-[#2867B4] active:to-[#1FAF38] active:text-white'
                         }`}
                     >
                         <HashLink smooth to={to}>{label}</HashLink>

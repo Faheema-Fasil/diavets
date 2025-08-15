@@ -26,16 +26,16 @@ function TopHeader() {
                 {/* Social Icons */}
                 <div className="flex items-center gap-2 md:gap-4  sm:mt-0">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa-brands fa-square-facebook hover:text-[#d4d4d4] transition" />
+                        <i className="fa-brands fa-square-facebook hover:text-[#d4d4d4] active:text-[#d4d4d4] transition" />
                     </a>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa-brands fa-instagram hover:text-[#d4d4d4] transition" />
+                        <i className="fa-brands fa-instagram hover:text-[#d4d4d4] active:text-[#d4d4d4]  transition" />
                     </a>
                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa-brands fa-youtube hover:text-[#d4d4d4] transition" />
+                        <i className="fa-brands fa-youtube hover:text-[#d4d4d4] active:text-[#d4d4d4]  transition" />
                     </a>
                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa-brands fa-linkedin-in hover:text-[#d4d4d4] transition" />
+                        <i className="fa-brands fa-linkedin-in hover:text-[#d4d4d4] active:text-[#d4d4d4]  transition" />
                     </a>
                 </div>
             </div>

@@ -3,8 +3,8 @@ import server_url from '../../services/serverUrl';
 // import a from '../../assets/img1.png';
 // import b from '../../assets/img2.png';
 // import c from '../../assets/img3.jpg';
-function Testimonial({ partnerImages,testimonials }) {
-    
+function Testimonial({ partnerImages, testimonials }) {
+
     return (
         <>
             {/* Testimonials Section */}
@@ -17,7 +17,7 @@ function Testimonial({ partnerImages,testimonials }) {
 
                 <div className='flex flex-col md:flex-row justify-center items-center gap-3'>
                     {testimonials.map((item, idx) => (
-                        <div key={idx} className={`hover:bg-green-100 hover:border hover:border-[#2867B4] duration-700 ${item.bg} p-5 border-1 border-white lg:p-7 flex flex-col gap-4 w-full max-w-md font-[Tahoma] h-auto  md:h-[450px] lg:h-[450px] `}>
+                        <div key={idx} className={`hover:bg-green-100 hover:border hover:border-[#2867B4] active:bg-green-100 active:border active:border-[#2867B4]  duration-700 ${item.bg} p-5 border-1 border-white lg:p-7 flex flex-col gap-4 w-full max-w-md font-[Tahoma] h-auto  md:h-[450px] lg:h-[450px] `}>
                             <div className="text-end text-[40px] text-black">&#x275E;</div>
                             <div>
                                 <h3 className="text-[#2867B4] font-bold text-[18px]">{item.name}</h3>
@@ -45,8 +45,14 @@ function Testimonial({ partnerImages,testimonials }) {
                                     key={`${idx}-${imgIdx}`}
                                     src={`${server_url}${img}`}
                                     alt={`Partner ${imgIdx + 1}`}
-                                    className='object-contain h-auto md:h-[112px] lg:h-[140px] w-[185px] md:w-[300px] lg:w-[500px]'
+                                    loading="eager"
+                                    fetchPriority="high"
+                                    decoding="sync"
+                                    width={500}
+                                    height={Math.round(500 * 0.28)}
+                                    className="object-contain h-auto md:h-[112px] lg:h-[140px] w-[185px] md:w-[300px] lg:w-[500px]"
                                 />
+
                             ))
                         )}
                     </div>

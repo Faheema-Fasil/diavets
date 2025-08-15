@@ -20,7 +20,7 @@ function AboutUs({data}) {
                     <img
                         src={`${server_url}${data?.image}`}
                         alt="About Dia-Vets"
-                        className="rounded-lg object-cover "
+                        className="rounded-lg object-cover  aspect-[1/1]"
                     />
                 </div>
             </div>

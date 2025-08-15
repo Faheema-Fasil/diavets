@@ -14,8 +14,8 @@ function OurProduucts() {
 
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-6 p-0 sm:p-6">
                     {/* Card 1 */}
-                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700  bg-[#DCEBF8] border-1 border-[#DCEBF8]  md:w-2/3  max-w-md flex flex-col h-auto  sm:h-[360px] lg:h-[350px] gap-5 p-5 py-16">
-                        <i className="group-hover:text-[#2867B4] duration-700 fa-solid fa-prescription-bottle-medical fa-2xl"></i>
+                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700 active:bg-pink-100 active:border-[#2867B4] active:border   bg-[#DCEBF8] border-1 border-[#DCEBF8]  md:w-2/3  max-w-md flex flex-col h-auto  sm:h-[360px] lg:h-[350px] gap-5 p-5 py-16">
+                        <i className="group-hover:text-[#2867B4] group-active:text-[#2867B4] duration-700 fa-solid fa-prescription-bottle-medical fa-2xl"></i>
                         <h6 className="text-[#2867B4] font-bold md:text-[20px] leading-[36px] tracking-[0] font-[Tahoma]">
                             Veterinary Healthcare
                         </h6>
@@ -25,8 +25,8 @@ function OurProduucts() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700 border-1 border-white bg-[#FFE6DD] h-auto  sm:h-[360px] md:w-2/3 lg:h-[350px] max-w-md flex flex-col gap-5 p-5 py-16">
-                        <i className="group-hover:text-[#2867B4] duration-700 fa-solid fa-magnifying-glass fa-2xl"></i>
+                    <div className="group hover:bg-pink-100 hover:border-[#2867B4] hover:border duration-700 active:bg-pink-100 active:border-[#2867B4] active:border border-1 border-white bg-[#FFE6DD] h-auto  sm:h-[360px] md:w-2/3 lg:h-[350px] max-w-md flex flex-col gap-5 p-5 py-16">
+                        <i className="group-hover:text-[#2867B4] group-active:text-[#2867B4] duration-700 fa-solid fa-magnifying-glass fa-2xl"></i>
                         <h6 className="text-[#2867B4] font-bold md:text-[20px] leading-[36px] tracking-[0] font-[Tahoma]">
                             Specialized Products
                         </h6>

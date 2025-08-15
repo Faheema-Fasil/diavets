@@ -8,7 +8,7 @@ function BottomFooter() {
         © 2025, Dia - Vet Biotech Pvt Ltd. &nbsp; #All rights reserved.
       </div>
       <div className="text-center text-xs sm:text-right text-[#1FAF38]">
-        <a href="https://penoft.com/">
+        <a href="https://penoft.com/" alt='  Designed and Developed by Penoft'>
 
         Designed and Developed by Penoft
         </a>
