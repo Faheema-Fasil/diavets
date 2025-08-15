@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/DiavetsLogo.png" />
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- Favicon -->
+  <link rel="icon" href="/DiavetsLogo.png" type="image/png" />
+
+
+  <link rel="preload" as="image" href="/DiavetsLogo.png" fetchpriority="high" />
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    media="print"
+    onload="this.media='all'"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <noscript>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      media="print"
-      onload="this.media='all'"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      />
-    </noscript>
-  
+  </noscript>
 
-    <link
+  <!-- Main Stylesheets -->
+  <link
+    rel="preload"
+    as="style"
+    href="/assets/index-KFIWBO5_.css"
+  />
+  <link
     rel="stylesheet"
     href="/assets/index-KFIWBO5_.css"
     media="print"
@@ -41,27 +52,39 @@
     <link rel="stylesheet" href="/assets/index-KFIWBO5_.css" />
     <link rel="stylesheet" href="/src/styles.css" />
   </noscript>
-  
-  
 
-    <title>Diavets - Digital Veterinary Services for Animals in Noida</title>
-    <meta
-      name="description"
-      content="Diavets offers digital veterinary services and online consultations for pet owners in Noida—bringing quality animal care to your fingertips."
-    />
-    <meta
-      name="keywords"
-      content="veterinary, pet care, digital veterinary services, Noida, online vet consultation"
-    />
-    <meta name="author" content="Diavets" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+  <!-- SEO Meta Tags -->
+  <title>Diavets - Digital Veterinary Services for Animals in Noida</title>
+  <meta
+    name="description"
+    content="Diavets offers digital veterinary services and online consultations for pet owners in Noida—bringing quality animal care to your fingertips."
+  />
+  <meta
+    name="keywords"
+    content="veterinary, pet care, digital veterinary services, Noida, online vet consultation"
+  />
+  <meta name="author" content="Diavets" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Open Graph (Facebook & LinkedIn) -->
+  <meta property="og:title" content="Diavets - Digital Veterinary Services for Animals in Noida" />
+  <meta property="og:description" content="Diavets offers digital veterinary services and online consultations for pet owners in Noida—bringing quality animal care to your fingertips." />
+  <meta property="og:image" content="/DiavetsLogo.png" />
+  <meta property="og:url" content="https://diavets.com" />
+  <meta property="og:type" content="website" />
 
-  </head>
-  
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diavets - Digital Veterinary Services for Animals in Noida" />
+  <meta name="twitter:description" content="Diavets offers digital veterinary services and online consultations for pet owners in Noida—bringing quality animal care to your fingertips." />
+  <meta name="twitter:image" content="/DiavetsLogo.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://diavets.com" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
